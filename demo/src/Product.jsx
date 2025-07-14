@@ -1,21 +1,17 @@
 import "./Product.css";
+import Price  from "./Price";
 
-function Product({ title, price,feature}) {  // Destructure the props to get title directly
-        let styles= { backgroundColor: price>100? "lightblue":"", padding: "10px", borderRadius: "5px" };
-
+function Product({ title}) {  // Destructure the props to get title directly
+    let oldPrice=["100", "200", "300","400"];
+    let newPrice=["80", "150", "250","500"];
   return (
     
-    <div className="Product" style={styles}> 
-      <h2> {title}</h2>
-      <p>This is a product of worth {price}.</p>
-      {price > 100 && <p> This is an expensive product.</p>}
-      <ul>
-        {feature && feature.map((f, idx) => (
-          <li key={idx}>{f}</li>
-        ))}
-      </ul>
-      
-    </div>
+    <div className="Product"> 
+        <h2>{title}</h2>
+ 
+      <p>Description</p>
+      <Price oldPric/>
+     </div>
 
   );
 }

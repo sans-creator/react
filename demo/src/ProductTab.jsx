@@ -1,12 +1,14 @@
 import Product from "./Product";
+import Price from "./Price";
 
 function ProductTab() {
-  let features = ["phone", "pen", "tab"];
+
   return (
     <>
-    <Product title="phone" price={10} feature={features} fe2={{a: "hi-tech", b: "expensive"}} />
-    <Product title="pen" price={1} />
-    <Product title="tab" price={222} />
+    <Product  title="Logitech Mx Master" idx={0} />
+    <Product title="Apple Pencil" idx={1} />
+    <Product title="zebronics" idx={2}/>
+    <Product title="Petronics Toad" idx={3}/>    
     </>
    
   );
