@@ -1,0 +1,8 @@
+.ticket {
+    border: 1px solid #000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+}
